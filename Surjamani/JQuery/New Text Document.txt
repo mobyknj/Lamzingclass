@@ -1,0 +1,29 @@
+1.
+
+hide()
+
+$(".style1").click(function(){
+
+	$("p").hide();
+
+})
+
+
+2. hide()/show()/toogle()
+
+3.fadeIn()/fadeOut()/fadedToggle()
+
+4. slideUp()/slideDown()/slideToggle()
+
+5.animate()
+	$("p").animate({properties},speed)
+	
+	$("p").annimate({
+
+		height: '250px',
+		width: '300px',
+		opacity: 0.5,
+		fontSize: '2em',
+		left:'300px'
+		})
+

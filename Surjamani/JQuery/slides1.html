@@ -1,0 +1,49 @@
+<html>
+
+<style>
+	.style2{
+		background-color: grey;
+		color:white;
+		height: 100px;
+		
+	}
+	
+	.style{
+		background-color: grey;
+		color:white;
+		
+		width:80%;
+	}
+</style>
+
+
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+
+<script>
+
+$(document).ready(function(){
+
+$(".style2").hide();
+
+$(".style").click(function(){
+
+	$(".style2").slideToggle(); //slideUp(),slideToggle();
+
+})
+
+
+
+})
+</script>
+
+<div class = "style">
+	<div >click here to read more</div>
+	<div class = "style2"> <hr><br>this is a simple paragraph </div>
+</div>
+</html>
+
+
+
+

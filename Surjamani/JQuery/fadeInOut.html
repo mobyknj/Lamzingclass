@@ -1,0 +1,82 @@
+<html>
+
+<style>
+	p{
+		background-color: grey;
+		color:white;
+		height: 100px;
+		width:200px;
+	}
+	
+	.style1{
+	
+		height: 100px;
+		width:100px;
+		position:absolute;
+	}
+</style>
+
+
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+
+<script>
+
+$(document).ready(function(){
+
+$(".btn2").click(function(){
+	
+	$("#div1").fadeIn(100);
+	$("#div2").fadeIn(500);
+	$("#div3").fadeIn("slow");
+	$("#div4").fadeIn(1000);
+	
+
+})
+
+$(".btn1").click(function(){
+
+	$("#div1").fadeOut(1000);
+	$("#div2").fadeOut("slow");
+	$("#div3").fadeOut(500);
+	$("#div4").fadeOut(100);
+				
+
+})
+
+$("div").hover(function(){
+
+	$("#div1").animate({left: '0px' });
+	$("#div2").animate({left: '0px' });
+	$("#div3").animate({left: '0px' });
+	$("#div4").animate({left: '0px' });
+	
+	$(this).animate({
+		left: '200px'
+	});
+	
+				
+
+})
+
+
+})
+</script>
+
+<button class = "btn1">FadeOut</button>
+<button class = "btn2">FadeIn</button>
+
+<div class = "style1" style = "background-color:green;" id = "div1">
+</div>
+<div class = "style1" style = "background-color:blue;" id = "div2">
+</div>
+<div class = "style1" style = "background-color:red;" id = "div3">
+</div>
+<div class = "style1" style = "background-color:yellow;" id = "div4">
+</div>
+</html>
+
+
+
+
