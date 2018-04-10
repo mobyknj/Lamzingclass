@@ -1,0 +1,22 @@
+<html>
+
+
+<script>
+function myfunc()
+{
+	var a = 1;
+	var z;
+	var x = document.getElementById("val1").value;
+	while(a <= 10)
+	{
+		z = x*a;
+		document.write(x + " x " + a + " = "+ z +"<br>");
+		a= a+1;
+	}
+}
+</script>
+
+<input type = "text" id = "val1">
+<button type = "button" onclick = "myfunc()">Check</button>
+</html>
+

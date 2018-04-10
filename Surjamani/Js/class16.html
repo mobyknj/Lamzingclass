@@ -1,0 +1,41 @@
+<html>
+
+
+<script>
+
+
+
+function sarat(x,y)
+{
+	 var work = x + y;
+	 return work;
+}
+
+function myfunc()
+{
+    var a = document.getElementById("val1").value;
+	var b = document.getElementById("val2").value;
+	a = a*1;
+	b = b*1;
+	document.getElementById("disp").innerHTML = sarat(a,b);
+}
+
+
+function clearr()
+{
+document.write("the screen is overwritten with this tag");
+}
+
+
+
+</script>
+A <input type = "text" id = "val1"> <br>
+B<input type = "text" id = "val2">
+<button type = "button" onclick = "myfunc()">Add</button>
+<button type = "button" onclick = "clearr()">Clear</button>
+<hr>
+
+<p id = "disp">---</p>
+
+</html>
+

@@ -1,0 +1,50 @@
+<html>
+<style>
+.dispbox{
+height: 100px;
+width: 200px;
+background-color: #bdcedd; 
+float:left;
+color: grey;
+text-align:center;
+margin-top:200px;
+margin-left:10px;
+}
+#hd1 {
+color:red;
+font-weight:bold;
+}
+</style>
+
+<script>
+function myfunc()
+{
+var i;
+var odd = "";
+var even= "";
+ var a = [10,21,33, 44,55,66,77,88,99,987];
+  
+  for(i = 0; i<10; i++)
+  {
+	if(a[i]%2 == 0)
+		even = even + a[i] + " ";
+	else
+		odd = odd + a[i] + " ";
+  }
+  document.getElementById("even").innerHTML = even;
+  document.getElementById("odd").innerHTML = odd;
+}
+</script>
+<button type = "button" onclick = "myfunc()">Click here</button>
+
+<div class = "dispbox">
+<h3 id ="hd1">Even Numbers</h3>
+<p id = "even"></p>
+</div>
+
+<div class = "dispbox">
+<h3 id ="hd1">Odd Numbers</h3>
+<p id = "odd"></p>
+</div>
+</html>
+

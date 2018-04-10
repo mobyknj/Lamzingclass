@@ -1,0 +1,69 @@
+<html>
+<style>
+div{
+border: 2px #d6d3ce;
+background-color:#80bdff;
+width: 600px;
+height: 360px;
+padding: 20px;
+
+}
+</style>
+<script>
+
+function sum()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a + b;
+document.getElementById("disp").innerHTML =  c;
+}
+
+function sub()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a - b;
+document.getElementById("disp").innerHTML = c;
+}
+function division()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a/b;
+document.getElementById("disp").innerHTML = c;
+}
+function multiply()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a*b;
+document.getElementById("disp").innerHTML = c;
+}
+
+
+
+</script>
+<div>
+A <input type = "text" id = "num1" >
+B <input type = "text" id = "num2" >
+<p id = "disp" >-----</p>
+<button type = "button" onclick = "sum()" style = "background-color: blue;color:white; box-shadow: 2px 2px 10px grey;padding:10px; margin-left:20px;">Add</button>
+<button type = "button" onclick = "sub()" style = "background-color: blue;color:white; box-shadow: 2px 2px 10px grey;padding:10px; margin-left:20px;">Sub</button>
+<button type = "button" onclick = "division()" style = "background-color: blue;color:white; box-shadow: 2px 2px 10px grey;padding:10px; margin-left:20px;">Division</button>
+<button type = "button" onclick = "multiply()" style = "background-color: blue;color:white; box-shadow: 2px 2px 10px grey;padding:10px; margin-left:20px;">Multiply</button>
+</div>
+</html>
+

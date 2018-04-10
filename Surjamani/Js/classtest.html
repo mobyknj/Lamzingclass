@@ -1,0 +1,116 @@
+<html>
+<style>
+div{
+border: 2px #d6d3ce;
+background-color:#80bdff;
+
+width: 600px;
+height: 360px;
+padding: 20px;
+position: relative;
+    left: 500px;
+	margin-top: 30px;
+
+}
+
+</style>
+<script>
+
+function mainfunc()
+{
+var choice = document.getElementById("cho").value;
+choice = choice*1;
+var result;
+	switch(choice)
+	{
+		case 1:
+		result=sum();
+		break;
+	
+		case 2:
+		result= sub();
+		break;
+	
+
+		case 3:
+		result= division();
+		break;
+	 
+		
+		case 4:
+		result= multiply();
+		break;
+	
+
+		
+		default:
+		result= "wrong entry";
+		
+			
+		
+	}
+	document.getElementById("disp").innerHTML =  result;
+}
+
+
+function sum()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a + b;
+return c;
+}
+
+function sub()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a - b;
+return c;
+}
+function division()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a/b;
+return c;
+}
+function multiply()
+{
+var a,b;
+a = document.getElementById("num1").value;
+b = document.getElementById("num2").value;
+a = a*1;
+b = b*1;
+var c = a*b;
+return c;
+}
+
+
+
+</script>
+<div>
+A <input type = "text" id = "num1" >
+B <input type = "text" id = "num2" >
+<p id = "disp" >-----</p>
+<ol>
+<li> Addition</li>
+<li> Substraction</li>
+<li> Division</li>
+<li> Multiply</li>
+</ol>
+<br>
+<input type = "text" id = "cho" > Enter Your Choice <br><br>
+<button type = "button" onclick = "mainfunc()">Enter</button>
+</div>
+</html>
+

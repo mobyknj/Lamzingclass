@@ -1,0 +1,83 @@
+<html>
+
+
+<script>
+function myfunc()
+{
+	var a = document.getElementById("val1").value;
+    a = a*1;
+
+	switch(a)
+	{
+		case 1:
+		document.write("Sunday <br>");
+	
+		case 2:
+		document.write("Monday <br>");
+	
+
+		case 3:
+		document.write("Tuesday <br>");
+	 
+		
+		case 4:
+		document.write("Wednesday <br>");
+		break;
+	
+		case 5:
+		document.write("Thursday <br>");
+		
+	
+		case 6:
+		document.write("Friday <br>");
+		
+		
+		case 7:
+		document.write("Saturday <br>");
+		
+		default:
+		document.write("Wrong Entry, FYI there are only seven days in a week ... ");
+		
+			
+		
+	}
+ 
+}
+</script>
+Enter the Day Number (1-7) <input type = "text" id = "val1">
+
+<p id = "disp">---</p>
+
+<button type = "button" onclick = "myfunc()">Check</button>
+
+
+</html>
+
+<!--
+switch(choice)
+{
+	case 1:
+	-----
+	break;
+	
+	case 2:
+	----
+	break;
+	
+	case 3:
+	----
+	break;
+	
+	
+	
+	
+	case n:
+	----
+	break;
+	
+	
+	default:
+	----
+	break;
+}
+-->

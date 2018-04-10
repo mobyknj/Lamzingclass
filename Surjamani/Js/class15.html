@@ -1,0 +1,69 @@
+<html>
+
+
+<script>
+function myfunc()
+{
+	var a = document.getElementById("val1").value;
+   
+
+	switch(a)
+	{
+		case 'a':
+        case 'e':
+		case 'i':		
+		case 'o':		
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			document.getElementById("disp").innerHTML = "Vowel";
+			break;
+		
+
+		default:
+			document.getElementById("disp").innerHTML = "consonant";
+			break;		
+		
+	}
+ 
+}
+</script>
+Enter a letter<input type = "text" id = "val1">
+
+<p id = "disp">---</p>
+
+<button type = "button" onclick = "myfunc()">Check</button>
+
+</html>
+
+<!--
+switch(choice)
+{
+	case 1:
+	-----
+	break;
+	
+	case 2:
+	----
+	break;
+	
+	case 3:
+	----
+	break;
+	
+	
+	
+	
+	case n:
+	----
+	break;
+	
+	
+	default:
+	----
+	break;
+}
+-->

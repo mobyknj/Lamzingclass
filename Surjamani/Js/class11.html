@@ -1,0 +1,46 @@
+<html>
+
+
+<script>
+function myfunc()
+{
+	var a = document.getElementById("val1").value;
+
+    a = a*1;
+	
+  if(a>=75)
+  {
+	document.getElementById("disp").innerHTML = "A Grade";
+  }
+  else if(a>=60)
+  {
+    document.getElementById("disp").innerHTML = "B Grade";
+  }
+
+  else if(a>=50)
+  {
+    document.getElementById("disp").innerHTML = "C Grade";
+  }
+  
+    else if(a>=30)
+  {
+    document.getElementById("disp").innerHTML = "D Grade";
+  }
+  
+  else
+  {
+ 
+    document.getElementById("disp").innerHTML = "FAIL";
+ 
+  }
+}
+</script>
+Percentage <input type = "text" id = "val1">
+
+<p id = "disp">---</p>
+
+<button type = "button" onclick = "myfunc()">Check</button>
+
+</html>
+
+

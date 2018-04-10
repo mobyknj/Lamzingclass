@@ -1,0 +1,48 @@
+<html>
+
+
+<script>
+function myfunc()
+{
+	var a = document.getElementById("val1").value;
+	var b = document.getElementById("val2").value;
+	var c = document.getElementById("val3").value;
+    a = a*1;
+	b = b*1;
+	c = c*1;
+	
+	if (a>b)
+	{
+		 if(a>c)
+			{
+			document.getElementById("disp").innerHTML = "A is Biggest";
+			}
+		else
+			{
+			document.getElementById("disp").innerHTML = "C is Biggest";
+			}
+	}
+	else
+	{	
+		if(b>c)
+			{
+			document.getElementById("disp").innerHTML = "B is Biggest";
+			}
+		else
+			{
+			document.getElementById("disp").innerHTML = "C is Biggest";
+			}
+		
+	}
+}
+</script>
+A <input type = "text" id = "val1">
+B <input type = "text" id = "val2">
+C <input type = "text" id = "val3">
+<p id = "disp">---</p>
+
+<button type = "button" onclick = "myfunc()">Check</button>
+
+</html>
+
+

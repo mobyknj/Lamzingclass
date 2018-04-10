@@ -1,0 +1,52 @@
+<html>
+<style>
+.st1{
+float: center;
+//margin-left:300px;
+border: 1px solid #56c7e9;
+padding: 20px;
+background-color:#b0e0e6;
+text-align: center;
+}
+#but1{
+background-color:#e9003a;
+color:white;
+padding: 5px;
+
+}
+#but1:hover{
+background-color:#aabbed;
+color:#e9003a;
+box-shadow: 3px 10px 10px #56c7e9;
+font-size: 1em;	
+}
+#disp{
+font-size: 30px;
+letter-spacing:.5em;
+text-shadow:6px 10px 6px grey;
+}
+</style>
+<script>
+
+function myfunc()
+{
+document.getElementById("disp").innerHTML = "My name Is Surjamani";
+//document.write("My name Is Surjamani")
+}
+	
+function myfunc2()
+{
+document.getElementById("disp").innerHTML = "I am from wangkhei";
+//document.write("My name Is Surjamani")
+}
+
+
+</script>
+<div class = "st1">
+<button type = "button" id = "but1" onclick = "myfunc()">Click to find my name</button>
+<button type = "button" id = "but1" onclick = "myfunc2()">Click to find my address</button>
+<p id = "disp">What is my name ?</p>
+</div>
+</html>
+
+

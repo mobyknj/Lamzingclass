@@ -1,0 +1,23 @@
+<html>
+<script>
+	function check()
+	{
+		var name = document.getElementById("namefield").value;
+		var roll = document.getElementById("rollfield").value;
+		var add = document.getElementById("addfield").value;
+		if (name == "")
+			window.alert("name field is empty");
+		if (roll == "")
+			window.alert("roll field is empty");
+		if (add == "")
+			window.alert("address field is empty");
+	}
+</script>
+<form>
+	Name<input type = "text" name = "name" id = "namefield" value = ""><br>
+	roll<input type = "text" name = "name" id = "rollfield" value = ""><br>
+	address<input type = "text" name = "name" id = "addfield" value = ""><br>
+	<input type = "checkbox" onclick = "check()">Validate
+	<input type = "submit" value = "SUBMIT"  >
+</form>
+</html>

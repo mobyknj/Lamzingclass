@@ -1,0 +1,44 @@
+<html>
+<script>
+	function check()
+	{
+		var name = document.getElementById("namefield").value;
+		var roll = document.getElementById("rollfield").value;
+		var add = document.getElementById("addfield").value;
+		var fl = 0;
+		
+		document.getElementById("disp1").innerHTML = "";
+		document.getElementById("disp2").innerHTML = "";
+		document.getElementById("disp3").innerHTML = "";
+		
+		if (name == "")
+			{
+			document.getElementById("disp1").innerHTML = "*name field is empty";
+			fl = 1;
+			}
+		if (roll == "")
+			{
+			document.getElementById("disp2").innerHTML = "Roll field is empty";
+			fl = 1;
+			}
+		if (add == "")
+			{
+			document.getElementById("disp3").innerHTML = "Address field is empty";
+			fl = 1;
+			}
+			
+		if (fl == 0)
+			document.getElementById("mybtn").disabled = false;
+		else
+		 document.getElementById("validate").checked = false;
+	   
+	}
+</script>
+<form>
+	Name<input type = "text" name = "name" id = "namefield" value = ""><span id = "disp1" style = "color:red;"></span><br>
+	roll<input type = "text" name = "name" id = "rollfield" value = ""><span id = "disp2" style = "color:red;"></span><br>
+	address<input type = "text" name = "name" id = "addfield" value = ""><span id = "disp3" style = "color:red;"></span><br>
+	<input type = "checkbox" onclick = "check()" id = "validate">Validate
+	<input type = "submit" value = "SUBMIT"  disabled id = "mybtn">
+</form>
+</html>
