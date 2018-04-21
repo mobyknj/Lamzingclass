@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+	 <link rel="stylesheet" href="css/mystyle.css" >
+
+    <title>Hello, world!</title>
+  </head>
+  
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+  
+	$(document).ready(function(){ 
+	
+		$(".but1").click(function(){
+			$(".custom-bar").animate({width:'60%'});
+
+		})
+
+	
+	})
+	
+	
+	function changepercent()
+	{
+		document.getElementById("disp1").innerHTML = "60%";
+	}
+  </script>
+  
+  
+  <style>
+	
+	.custom-pro{
+		height: 30px;
+		width:80%;
+		background-color: pink;
+		border-radius: 180px;
+	}
+	
+	.custom-bar{
+		height: 30px;
+		//background-color: red;
+		border-radius: 180px;
+		position:absolute;
+	}
+	
+	#disp1{
+		color:white;
+		text-align:right;
+		font-weight:bold;
+	}
+	
+	
+  </style>
+  
+  
+  
+  <body>
+    
+	
+	
+		
+			
+			
+				
+					<div class = "progress">
+						<div class = "progress-bar" style="width:50%;">
+						</div>
+					</div>
+				
+		
+			
+			
+					<div class = "custom-pro">
+						<div class = "custom-bar bg-success" style="width:10%;">
+							<p id = "disp1">10%</p>
+						</div>
+					</div>
+					<button class = "btn btn-primary but1" onclick = "changepercent()">Increase+</button>
+					<button class = "btn btn-primary but1" onclick = "increase()">++</button>
+		
+			
+	
+		
+
+	
+	
+	
+	
+	
+	
+	</body>
+	
+	
+	
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
